@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:panelGroupLayout id="pgl1">
+    <af:button text="Enable Submit Button" id="b1" action="#{RequestBean.enableSubmit}"/>
+    <af:spacer width="10" height="10" id="s1"/>
+    <af:button text="Submit" disabled="true" id="b2" binding="#{backingBeanScope.BackingBean.submitBtn}"
+               partialTriggers="b1"/>
+  </af:panelGroupLayout>
+</jsp:root>
